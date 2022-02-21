@@ -2,13 +2,13 @@
 	import emailjs from '@emailjs/browser';
 	import { toast } from '@zerodevx/svelte-toast';
 
-	let disabled = true;
+	let disabled = false;
 
 	function sendEmail(e: any) {
 		e.preventDefault();
 
 		if (disabled) {
-			toast.push('You already sent an email!', {
+			return toast.push('You already sent an email!', {
 				theme: {
 					'--toastBackground': 'var(--secondary-700)',
 					'--toastBarBackground': 'var(--secondary-900)',
@@ -16,27 +16,35 @@
 					'--toastFontWeight': '500'
 				}
 			});
-			return;
 		}
+
+		disabled = true;
 
 		emailjs.sendForm('gmail', 'contact-me', e.target, 'user_vManlYtWcUHq4SZAbx5T0').then(
 			(result) => {
-				console.log(result.text);
+				toast.push('Email Sent!', {
+					theme: {
+						'--toastBackground': 'var(--primary-700)',
+						'--toastBarBackground': 'var(--primary-900)',
+						'--toastTextColor': 'var(--text-primary)'
+					}
+				});
+				console.log(result);
 			},
 			(error) => {
-				console.log(error.text);
+				toast.push('Email not sent!', {
+					theme: {
+						'--toastBackground': 'var(--secondary-700)',
+						'--toastBarBackground': 'var(--secondary-900)',
+						'--toastTextColor': 'var(--text-primary)',
+						'--toastFontWeight': '500'
+					}
+				});
+				console.error(error);
 			}
 		);
 
-		toast.push('Email Sent!', {
-			theme: {
-				'--toastBackground': 'var(--primary-700)',
-				'--toastBarBackground': 'var(--primary-900)',
-				'--toastTextColor': 'var(--text-primary)'
-			}
-		});
 		e.target.reset();
-		disabled = true;
 	}
 </script>
 
@@ -62,7 +70,7 @@
 		<textarea name="message" id="message" required />
 	</section>
 
-	<button type="submit">Send</button>
+	<button type="submit" {disabled}>Send</button>
 </form>
 
 <style>
@@ -120,7 +128,7 @@
 	}
 
 	input:focus {
-		background-color: var(--gray-800);
+		outline: 3px solid var(--primary-600);
 	}
 
 	textarea {
@@ -139,7 +147,7 @@
 	}
 
 	textarea:focus {
-		background-color: var(--gray-800);
+		outline: 3px solid var(--primary-600);
 	}
 
 	button {
@@ -168,8 +176,14 @@
 		background-color: var(--primary-900);
 	}
 
+	button:focus {
+		outline: 3px solid var(--primary-300);
+	}
+
 	button:disabled {
-		opacity: 0.3;
+		background-color: var(--gray-500);
+		opacity: 0.5;
+		box-shadow: none;
 	}
 
 	@media (max-width: 1000px) {

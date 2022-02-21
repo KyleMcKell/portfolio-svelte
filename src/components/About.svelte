@@ -1,7 +1,7 @@
 <section>
 	<article>
 		<p>
-			Hello! I&apos;m a self-taught front-end developer
+			I&apos;m a self-taught front-end developer
 			<span> ADHD-</span>ing my way through the world of web development.
 		</p>
 		<p>
@@ -27,7 +27,7 @@
 		<p>☕ Let's chat sometime 💙</p>
 	</article>
 
-	<a href="https://twitter.com/KyleMcKell"
+	<a tabindex="-1" href="https://twitter.com/KyleMcKell"
 		><img src={'/static/img/me.jpg'} alt="Kyle McKell holding a plant" /></a
 	>
 </section>

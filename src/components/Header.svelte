@@ -1,5 +1,8 @@
 <header>
-	<h1>Kyle McKell</h1>
+	<span>
+		<p>Hello! I'm</p>
+		<h1>Kyle McKell</h1>
+	</span>
 </header>
 
 <style>
@@ -10,9 +13,24 @@
 		align-items: center;
 		justify-content: center;
 	}
+
+	span {
+		position: relative;
+	}
+
+	p {
+		font-family: var(--font-snazzy);
+		font-size: 1.5rem;
+		position: absolute;
+		top: -2.2rem;
+		left: -2rem;
+		transform: rotate(-7deg);
+		color: var(--secondary-300);
+	}
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
 		color: var(--text-secondary);
+		position: relative;
 	}
 </style>
