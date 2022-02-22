@@ -66,7 +66,7 @@
 	</section>
 
 	<section class="area message">
-		<label for="message">Name</label>
+		<label for="message">Message</label>
 		<textarea name="message" id="message" required />
 	</section>
 
@@ -75,11 +75,11 @@
 
 <style>
 	form {
-		max-width: 800px;
+		max-width: 600px;
 		flex: 1;
 		display: grid;
 		gap: 2rem;
-		grid-template-columns: 1fr minmax(500px, 3fr) 1fr;
+		grid-template-columns: 1fr minmax(250px, auto) 1fr;
 		grid-template-areas:
 			'heading heading heading'
 			'name message message'
@@ -138,7 +138,7 @@
 		font-size: 1rem;
 		line-height: 1.5;
 		width: 100%;
-		min-height: calc(100% - 1.5rem);
+		min-height: calc(100% - 1.8rem);
 		border: none;
 		font-family: var(--font-base);
 		border-radius: 5px;
