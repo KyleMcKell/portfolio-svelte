@@ -29,11 +29,10 @@
 			});
 		}
 
-		disabled = true;
-
 		const emailJSUser = import.meta.env.VITE_EMAILJS_USER_ID;
 
-		if (!emailJSUser || emailJSUser !== typeof 'string') {
+		if (typeof emailJSUser !== 'string') {
+			console.log(typeof emailJSUser);
 			return toast.push('Missing emailJS user ID', { theme: errorToastTheme });
 		}
 
@@ -53,6 +52,7 @@
 		);
 
 		typedTarget.reset();
+		disabled = true;
 	}
 </script>
 
