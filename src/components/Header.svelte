@@ -26,6 +26,7 @@
 		left: -2rem;
 		transform: rotate(-7deg);
 		color: var(--secondary-300);
+		font-weight: 400;
 	}
 	h1 {
 		font-size: 4rem;

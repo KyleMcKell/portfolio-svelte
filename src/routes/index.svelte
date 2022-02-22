@@ -50,6 +50,28 @@
 		height: 100%;
 	}
 
+	:global(body) {
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+		isolation: isolate;
+		background-color: var(--bg-primary);
+		color: var(--text-primary);
+		font-family: var(--font-base);
+	}
+
+	:global(img, picture, video, canvas, svg) {
+		display: block;
+		max-width: 100%;
+	}
+
+	:global(input, button, textarea, select) {
+		font: inherit;
+	}
+
+	:global(p, h1, h2, h3, h4, h5, h6) {
+		overflow-wrap: break-word;
+	}
+
 	:global(:root) {
 		--white: hsl(216 70% 99%);
 		--black: hsl(210 25% 12%);
@@ -90,11 +112,5 @@
 		--text-secondary: var(--gray-100);
 		--bg-primary: var(--black);
 		--bg-secondary: var(--gray-900);
-	}
-
-	:global(body) {
-		background-color: var(--bg-primary);
-		color: var(--text-primary);
-		font-family: var(--font-base);
 	}
 </style>
