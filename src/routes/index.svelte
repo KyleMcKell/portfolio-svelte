@@ -4,8 +4,17 @@
 	import Footer from '../components/Footer.svelte';
 	import { SvelteToast } from '@zerodevx/svelte-toast';
 
-	console.log(`(o<  Welcome to my site :)
-<_)`);
+	console.log(`
+(o<
+<_)
+
+Welcome to my site! Enjoy your stay 🐦🦆🦉🐧🦜
+ ___
+<-,->
+[\`-']
+-"-"-
+=====
+`);
 </script>
 
 <svelte:head>
