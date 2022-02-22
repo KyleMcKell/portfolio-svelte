@@ -4,9 +4,8 @@
 	import Footer from '../components/Footer.svelte';
 	import { SvelteToast } from '@zerodevx/svelte-toast';
 
-	console.log(`
-(o<
-<_)
+	console.log(`(o<  (o<  (o<
+<_)  <_)  <_) 
 
 Welcome to my site! Enjoy your stay 🐦🦆🦉🐧🦜
  ___
