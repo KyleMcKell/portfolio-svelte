@@ -13,36 +13,38 @@
 					'--toastBackground': 'var(--secondary-700)',
 					'--toastBarBackground': 'var(--secondary-900)',
 					'--toastTextColor': 'var(--text-primary)',
-					'--toastFontWeight': '500'
-				}
+					'--toastFontWeight': '500',
+				},
 			});
 		}
 
 		disabled = true;
 
-		emailjs.sendForm('gmail', 'contact-me', e.target, 'user_vManlYtWcUHq4SZAbx5T0').then(
-			(result) => {
-				toast.push('Email Sent!', {
-					theme: {
-						'--toastBackground': 'var(--primary-700)',
-						'--toastBarBackground': 'var(--primary-900)',
-						'--toastTextColor': 'var(--text-primary)'
-					}
-				});
-				console.log(result);
-			},
-			(error) => {
-				toast.push('Email not sent!', {
-					theme: {
-						'--toastBackground': 'var(--secondary-700)',
-						'--toastBarBackground': 'var(--secondary-900)',
-						'--toastTextColor': 'var(--text-primary)',
-						'--toastFontWeight': '500'
-					}
-				});
-				console.error(error);
-			}
-		);
+		emailjs
+			.sendForm('gmail', 'contact-me', e.target, 'user_vManlYtWcUHq4SZAbx5T0')
+			.then(
+				(result) => {
+					toast.push('Email Sent!', {
+						theme: {
+							'--toastBackground': 'var(--primary-700)',
+							'--toastBarBackground': 'var(--primary-900)',
+							'--toastTextColor': 'var(--text-primary)',
+						},
+					});
+					console.log(result);
+				},
+				(error) => {
+					toast.push('Email not sent!', {
+						theme: {
+							'--toastBackground': 'var(--secondary-700)',
+							'--toastBarBackground': 'var(--secondary-900)',
+							'--toastTextColor': 'var(--text-primary)',
+							'--toastFontWeight': '500',
+						},
+					});
+					console.error(error);
+				}
+			);
 
 		e.target.reset();
 	}

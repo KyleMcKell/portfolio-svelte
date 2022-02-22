@@ -6,7 +6,8 @@
 				<span> ADHD-</span>ing my way through the world of web development
 			</p>
 			<p>
-				I have a passion for teaching others, and if you're interested, you can follow along on my
+				I have a passion for teaching others, and if you're interested, you can
+				follow along on my
 				<a href="https://twitter.com/KyleMcKell"> Twitter</a>
 			</p>
 			<p>
@@ -16,8 +17,8 @@
 			<p>
 				My current tech stack includes
 				<a href="https://reactjs.org/"> React</a>,
-				<a href="https://www.typescriptlang.org/"> TypeScript</a>, and a UI framework. Currently my
-				favorites are
+				<a href="https://www.typescriptlang.org/"> TypeScript</a>, and a UI
+				framework. Currently my favorites are
 				<a href="https://nextjs.org/"> Next.js</a>,
 				<a href="https://remix.run/"> Remix</a>, and
 				<a href="https://kit.svelte.dev/"> SvelteKit</a>
