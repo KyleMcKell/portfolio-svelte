@@ -16,7 +16,7 @@
 		margin: 0;
 	}
 
-	:global(html, body, body > div) {
+	:global(html, body) {
 		height: 100%;
 	}
 
