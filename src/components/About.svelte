@@ -24,7 +24,7 @@
 				<a href="https://kit.svelte.dev/"> SvelteKit</a>
 			</p>
 			<p>
-				I also LOVE writing some <span class="pink"> NIFTY </span>CSS!
+				I also LOVE writing <span class="pink"> NIFTY </span>CSS!
 			</p>
 			<p>☕ Let's chat sometime 💙</p>
 		</article>
