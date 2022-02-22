@@ -33,6 +33,8 @@
 		border-radius: 8px;
 		aspect-ratio: 1/1;
 		transition: transform 0.3s ease-in-out;
+		min-height: 352px;
+		min-width: 352px;
 	}
 
 	a:hover img {
