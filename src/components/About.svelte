@@ -2,15 +2,15 @@
 	<article>
 		<p>
 			I&apos;m a self-taught front-end developer
-			<span> ADHD-</span>ing my way through the world of web development.
+			<span> ADHD-</span>ing my way through the world of web development
 		</p>
 		<p>
 			I have a passion for teaching others, and if you're interested, you can follow along on my
-			<a href="https://twitter.com/KyleMcKell"> Twitter</a>!
+			<a href="https://twitter.com/KyleMcKell"> Twitter</a>
 		</p>
 		<p>
 			While you're at it, you can check out my
-			<a href="https://github.com/KyleMcKell"> GitHub</a>!
+			<a href="https://github.com/KyleMcKell"> GitHub</a>
 		</p>
 		<p>
 			My current tech stack includes
@@ -19,10 +19,10 @@
 			favorites are
 			<a href="https://nextjs.org/"> Next.js</a>,
 			<a href="https://remix.run/"> Remix</a>, and
-			<a href="https://kit.svelte.dev/"> SvelteKit</a>.
+			<a href="https://kit.svelte.dev/"> SvelteKit</a>
 		</p>
 		<p>
-			I also LOVE writing <span class="pink"> NIFTY </span>CSS!
+			I also LOVE writing some <span class="pink"> NIFTY </span>CSS!
 		</p>
 		<p>☕ Let's chat sometime 💙</p>
 	</article>
