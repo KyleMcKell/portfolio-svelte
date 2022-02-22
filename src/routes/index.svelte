@@ -3,6 +3,9 @@
 	import Main from '../components/Main.svelte';
 	import Footer from '../components/Footer.svelte';
 	import { SvelteToast } from '@zerodevx/svelte-toast';
+
+	console.log(`(o<  Welcome to my site :)
+<_)`);
 </script>
 
 <svelte:head>
