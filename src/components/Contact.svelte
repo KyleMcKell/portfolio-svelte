@@ -32,7 +32,6 @@
 		const emailJSUser = import.meta.env.VITE_EMAILJS_USER_ID;
 
 		if (typeof emailJSUser !== 'string') {
-			console.log(typeof emailJSUser);
 			return toast.push('Missing emailJS user ID', { theme: errorToastTheme });
 		}
 
