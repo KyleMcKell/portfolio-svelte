@@ -2,6 +2,20 @@
 	import emailjs from '@emailjs/browser';
 	import { toast } from '@zerodevx/svelte-toast';
 
+	const errorToastTheme = {
+		'--toastBackground': 'var(--secondary-700)',
+		'--toastBarBackground': 'var(--secondary-900)',
+		'--toastTextColor': 'var(--text-primary)',
+		'--toastFontWeight': '500',
+	};
+
+	const successToastTheme = {
+		'--toastBackground': 'var(--primary-700)',
+		'--toastBarBackground': 'var(--primary-900)',
+		'--toastTextColor': 'var(--text-primary)',
+		'--toastFontWeight': '500',
+	};
+
 	let disabled = false;
 
 	function sendEmail(e: SubmitEvent) {
@@ -11,43 +25,35 @@
 
 		if (disabled) {
 			return toast.push('You already sent an email!', {
-				theme: {
-					'--toastBackground': 'var(--secondary-700)',
-					'--toastBarBackground': 'var(--secondary-900)',
-					'--toastTextColor': 'var(--text-primary)',
-					'--toastFontWeight': '500',
-				},
+				theme: errorToastTheme,
 			});
 		}
 
 		disabled = true;
+
+		const emailJSUser = import.meta.env.VITE_EMAILJS_USER_ID;
+
+		if (!emailJSUser) {
+			return toast.push('Missing emailJS user ID', { theme: errorToastTheme });
+		}
 
 		emailjs
 			.sendForm(
 				'gmail',
 				'contact-me',
 				typedTarget,
-				'user_vManlYtWcUHq4SZAbx5T0'
+				import.meta.env.VITE_EMAILJS_USER_ID as string
 			)
 			.then(
 				(result) => {
 					toast.push('Email Sent!', {
-						theme: {
-							'--toastBackground': 'var(--primary-700)',
-							'--toastBarBackground': 'var(--primary-900)',
-							'--toastTextColor': 'var(--text-primary)',
-						},
+						theme: successToastTheme,
 					});
 					console.log(result);
 				},
 				(error) => {
 					toast.push('Email not sent!', {
-						theme: {
-							'--toastBackground': 'var(--secondary-700)',
-							'--toastBarBackground': 'var(--secondary-900)',
-							'--toastTextColor': 'var(--text-primary)',
-							'--toastFontWeight': '500',
-						},
+						theme: errorToastTheme,
 					});
 					console.error(error);
 				}
