@@ -1,41 +1,39 @@
 <section>
-	<div>
-		<article>
-			<p>
-				I&apos;m a self-taught front-end developer
-				<span> ADHD-</span>ing my way through the world of web development
-			</p>
-			<p>
-				I have a passion for teaching others, and if you're interested, you can
-				follow along on my
-				<a href="https://twitter.com/KyleMcKell"> Twitter</a>
-			</p>
-			<p>
-				While you're at it, you can check out my
-				<a href="https://github.com/KyleMcKell"> GitHub</a>
-			</p>
-			<p>
-				My current tech stack includes
-				<a href="https://reactjs.org/"> React</a>,
-				<a href="https://www.typescriptlang.org/"> TypeScript</a>, and a UI
-				framework. Currently my favorites are
-				<a href="https://nextjs.org/"> Next.js</a>,
-				<a href="https://remix.run/"> Remix</a>, and
-				<a href="https://kit.svelte.dev/"> SvelteKit</a>
-			</p>
-			<p>
-				I also LOVE writing <span class="pink"> NIFTY </span>CSS!
-			</p>
-			<p>☕ Let's chat sometime 💙</p>
-		</article>
+	<article>
+		<p>
+			I&apos;m a self-taught front-end developer
+			<span> ADHD-</span>ing my way through the world of web development
+		</p>
+		<p>
+			I have a passion for teaching others, and if you're interested, you can
+			follow along on my
+			<a href="https://twitter.com/KyleMcKell"> Twitter</a>
+		</p>
+		<p>
+			While you're at it, you can check out my
+			<a href="https://github.com/KyleMcKell"> GitHub</a>
+		</p>
+		<p>
+			My current tech stack includes
+			<a href="https://reactjs.org/"> React</a>,
+			<a href="https://www.typescriptlang.org/"> TypeScript</a>, and a UI
+			framework. Currently my favorites are
+			<a href="https://nextjs.org/"> Next.js</a>,
+			<a href="https://remix.run/"> Remix</a>, and
+			<a href="https://kit.svelte.dev/"> SvelteKit</a>
+		</p>
+		<p>
+			I also LOVE writing <span class="pink"> NIFTY </span>CSS!
+		</p>
+		<p>☕ Let's chat sometime 💙</p>
+	</article>
 
-		<a tabindex="-1" href="https://twitter.com/KyleMcKell">
-			<picture>
-				<source type="image/avif" srcset="/img/me.avif" />
-				<img src="/img/me.png" alt="Kyle McKell holding a plant" />
-			</picture>
-		</a>
-	</div>
+	<a tabindex="-1" href="https://twitter.com/KyleMcKell">
+		<picture>
+			<source type="image/avif" srcset="/img/me.avif" />
+			<img src="/img/me.png" alt="Kyle McKell holding a plant" />
+		</picture>
+	</a>
 </section>
 
 <style>
@@ -44,17 +42,10 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		gap: 4rem;
 		background-color: var(--bg-secondary);
 		width: 100%;
 		padding: 4rem 3rem;
-	}
-
-	div {
-		display: flex;
-		width: 960px;
-		justify-content: space-between;
-		align-items: center;
-		gap: 4rem;
 	}
 
 	article {
@@ -105,12 +96,7 @@
 	}
 
 	@media (max-width: 1000px) {
-		/* section {
-			flex-direction: column-reverse;
-			width: 100%;
-		} */
-
-		div {
+		section {
 			flex-direction: column-reverse;
 			width: 100%;
 		}
