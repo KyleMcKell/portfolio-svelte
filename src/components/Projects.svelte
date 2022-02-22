@@ -56,6 +56,7 @@
 	}
 
 	ul {
+		padding: 0;
 		width: fit-content;
 		height: 100%;
 		display: flex;

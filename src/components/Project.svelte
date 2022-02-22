@@ -47,4 +47,11 @@
 		font-size: 1.2rem;
 		font-weight: 700;
 	}
+
+	@media (max-width: 466px) {
+		img {
+			min-height: 200px;
+			min-width: 200px;
+		}
+	}
 </style>
