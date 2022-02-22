@@ -5,6 +5,11 @@
 	import { SvelteToast } from '@zerodevx/svelte-toast';
 </script>
 
+<svelte:head>
+	<title>Kyle McKell</title>
+	<meta name="description" content="Kyle McKell's personal website" />
+</svelte:head>
+
 <SvelteToast />
 <Header />
 <Main />
