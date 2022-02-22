@@ -4,8 +4,10 @@
 
 	let disabled = false;
 
-	function sendEmail(e: any) {
+	function sendEmail(e: SubmitEvent) {
 		e.preventDefault();
+
+		const typedTarget = e.target as HTMLFormElement;
 
 		if (disabled) {
 			return toast.push('You already sent an email!', {
@@ -21,7 +23,12 @@
 		disabled = true;
 
 		emailjs
-			.sendForm('gmail', 'contact-me', e.target, 'user_vManlYtWcUHq4SZAbx5T0')
+			.sendForm(
+				'gmail',
+				'contact-me',
+				typedTarget,
+				'user_vManlYtWcUHq4SZAbx5T0'
+			)
 			.then(
 				(result) => {
 					toast.push('Email Sent!', {
@@ -46,7 +53,7 @@
 				}
 			);
 
-		e.target.reset();
+		typedTarget.reset();
 	}
 </script>
 
@@ -54,22 +61,22 @@
 	<h2>Contact Me!</h2>
 	<section class="field name">
 		<label for="name">Name</label>
-		<input type="text" name="name" id="name" required />
+		<input type="text" name="name" id="name" required {disabled} />
 	</section>
 
 	<section class="field email">
 		<label for="email">Email</label>
-		<input type="email" name="email" id="email" required />
+		<input type="email" name="email" id="email" required {disabled} />
 	</section>
 
 	<section class="field subject">
 		<label for="subject">Subject</label>
-		<input name="subject" type="text" id="subject" required />
+		<input name="subject" type="text" id="subject" required {disabled} />
 	</section>
 
 	<section class="area message">
 		<label for="message">Message</label>
-		<textarea name="message" id="message" required />
+		<textarea name="message" id="message" required {disabled} />
 	</section>
 
 	<button type="submit" {disabled}>Send</button>
@@ -150,6 +157,13 @@
 
 	textarea:focus {
 		outline: 3px solid var(--primary-600);
+	}
+
+	textarea:disabled,
+	input:disabled {
+		background-color: var(--gray-600);
+		opacity: 0.4;
+		box-shadow: none;
 	}
 
 	button {
