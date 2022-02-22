@@ -9,5 +9,8 @@ node_modules/
 /coverage
 /node_modules
 /.next
+/.svelte-kit
+/.svelte-kit-cache
+/.svelte-kit-cache-vscode
 
 pnpm-lock.yaml
