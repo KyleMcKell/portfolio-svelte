@@ -15,6 +15,32 @@
 <Footer />
 
 <style>
+	@font-face {
+		font-family: 'Rubik';
+		src: url('/fonts/Rubik.woff2') format('woff2 supports variations'),
+			url('/fonts/Rubik.woff2') format('woff2-variations');
+		font-weight: 300 900;
+		font-style: normal;
+		font-display: fallback;
+	}
+
+	@font-face {
+		font-family: 'Rubik';
+		src: url('/fonts/Rubik.woff2') format('woff2 supports variations'),
+			url('/fonts/Rubik.woff2') format('woff2-variations');
+		font-weight: 300 900;
+		font-style: italic;
+		font-display: fallback;
+	}
+
+	@font-face {
+		font-family: 'Sriracha';
+		src: url('/fonts/Sriracha.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+		font-display: fallback;
+	}
+
 	:global(*) {
 		box-sizing: border-box;
 		margin: 0;
