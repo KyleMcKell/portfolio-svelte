@@ -33,10 +33,8 @@
 <section>
 	<h2>My Projects</h2>
 	<ul>
-		{#each projects as project}
-			<li>
-				<Project {...project} />
-			</li>
+		{#each projects as project (project.name)}
+			<Project {...project} />
 		{/each}
 	</ul>
 </section>

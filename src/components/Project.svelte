@@ -5,13 +5,15 @@
 	export let description: string;
 </script>
 
-<a href={url}>
-	<picture>
-		<source srcset={`/img/${src}.avif`} type="image/avif" />
-		<img src={`/img/${src}.png`} alt={description} />
-	</picture>
-	<h3>{name}</h3>
-</a>
+<li>
+	<a href={url}>
+		<picture>
+			<source srcset={`/img/${src}.avif`} type="image/avif" />
+			<img src={`/img/${src}.png`} alt={description} />
+		</picture>
+		<h3>{name}</h3>
+	</a>
+</li>
 
 <style>
 	a {
@@ -22,7 +24,7 @@
 		gap: 1rem;
 		height: 100%;
 		width: 100%;
-		max-width: 22rem;
+		max-width: 18rem;
 		text-decoration: none;
 	}
 
@@ -37,8 +39,10 @@
 		border-radius: 8px;
 		aspect-ratio: 1/1;
 		transition: transform 0.3s ease-in-out;
-		min-height: 352px;
-		min-width: 352px;
+		max-width: 325px;
+		max-height: 325px;
+		min-height: 200px;
+		min-width: 200px;
 	}
 
 	a:hover img {
@@ -50,16 +54,5 @@
 		color: var(--text-primary);
 		font-size: 1.2rem;
 		font-weight: 700;
-	}
-
-	a:hover h3 {
-		text-decoration: underline;
-	}
-
-	@media (max-width: 466px) {
-		img {
-			min-height: 200px;
-			min-width: 200px;
-		}
 	}
 </style>

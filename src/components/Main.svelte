@@ -1,11 +1,11 @@
 <script>
 	import About from './About.svelte';
-	import Projects from './Projects.svelte';
+	import ProjectList from './ProjectList.svelte';
 </script>
 
 <main>
 	<About />
-	<Projects />
+	<ProjectList />
 </main>
 
 <style>

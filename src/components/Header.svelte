@@ -22,8 +22,8 @@
 		font-family: var(--font-snazzy);
 		font-size: 1.5rem;
 		position: absolute;
-		top: -16px;
-		left: -30px;
+		top: -24px;
+		left: -32px;
 		transform: rotate(-7deg);
 		color: var(--secondary-300);
 		font-weight: 400;
