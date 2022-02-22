@@ -13,19 +13,19 @@
 			name: 'Aeropress Tracker',
 			url: 'https://aeropresstracker.com/',
 			description: 'An app to track aeropress brews to make the perfect one!',
-			src: '/static/img/aeropresstracker.png'
+			src: '/img/aeropresstracker.png'
 		},
 		{
 			name: 'Splitter',
 			url: 'https://kylemckell.github.io/Tip-calculator/',
 			description: 'Tip splitting app that uses vanilla HTML, CSS, and JS',
-			src: '/static/img/splitter.png'
+			src: '/img/splitter.png'
 		},
 		{
 			name: 'Pokedex',
 			url: 'https://kylemckell.github.io/Pokedex/',
 			description: 'Pokedex app made with React and PokeAPI',
-			src: '/static/img/pokedex.png'
+			src: '/img/pokedex.png'
 		}
 	];
 </script>
