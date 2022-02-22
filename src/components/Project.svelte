@@ -6,7 +6,10 @@
 </script>
 
 <a href={url}>
-	<img {src} alt={description} />
+	<picture>
+		<source srcset={`/img/${src}.avif`} type="image/avif" />
+		<img src={`/img/${src}.png`} alt={description} />
+	</picture>
 	<h3>{name}</h3>
 </a>
 
@@ -20,6 +23,7 @@
 		height: 100%;
 		width: 100%;
 		max-width: 22rem;
+		text-decoration: none;
 	}
 
 	a:hover {
@@ -46,6 +50,10 @@
 		color: var(--text-primary);
 		font-size: 1.2rem;
 		font-weight: 700;
+	}
+
+	a:hover h3 {
+		text-decoration: underline;
 	}
 
 	@media (max-width: 466px) {

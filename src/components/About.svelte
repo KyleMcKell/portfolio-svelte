@@ -27,9 +27,12 @@
 		<p>☕ Let's chat sometime 💙</p>
 	</article>
 
-	<a tabindex="-1" href="https://twitter.com/KyleMcKell"
-		><img src={'/img/me.avif'} alt="Kyle McKell holding a plant" /></a
-	>
+	<a tabindex="-1" href="https://twitter.com/KyleMcKell">
+		<picture>
+			<source type="image/avif" srcset="/img/me.avif 1x" />
+			<img src="/img/me.png" alt="Kyle McKell holding a plant" />
+		</picture>
+	</a>
 </section>
 
 <style>
