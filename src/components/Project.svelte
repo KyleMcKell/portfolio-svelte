@@ -2,11 +2,11 @@
 	export let name: string;
 	export let url: string;
 	export let src: string;
-	// export let description;
+	export let description: string;
 </script>
 
 <a href={url}>
-	<img {src} alt={name} />
+	<img {src} alt={description} />
 	<h3>{name}</h3>
 </a>
 
