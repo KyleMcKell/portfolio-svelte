@@ -1,6 +1,6 @@
 <header>
 	<span>
-		<p>Hello! I'm</p>
+		<h2>Hello! I'm</h2>
 		<h1>Kyle McKell</h1>
 	</span>
 </header>
@@ -18,7 +18,7 @@
 		position: relative;
 	}
 
-	p {
+	h2 {
 		font-family: var(--font-snazzy);
 		font-size: 1.5rem;
 		position: absolute;
