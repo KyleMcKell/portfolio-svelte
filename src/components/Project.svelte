@@ -38,7 +38,7 @@
 		object-fit: cover;
 		border-radius: 8px;
 		aspect-ratio: 1/1;
-		transition: transform 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 		max-width: 325px;
 		max-height: 325px;
 		min-height: 200px;
@@ -48,6 +48,7 @@
 	a:hover img {
 		border-color: var(--primary-700);
 		transform: rotate(5deg);
+		will-change: transform, border-color;
 	}
 
 	h3 {

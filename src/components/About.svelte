@@ -74,12 +74,13 @@
 		aspect-ratio: 1/1;
 		border-radius: 50%;
 		border: 5px solid var(--gray-500);
-		transition: transform 0.2s ease-in;
+		transition: all 0.3s ease-in-out;
 	}
 
 	img:hover {
 		border-color: var(--primary-700);
-		transform: rotate(2deg);
+		transform: rotate(5deg);
+		will-change: transform, border-color;
 		cursor: pointer;
 	}
 

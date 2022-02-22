@@ -41,7 +41,7 @@
 		font-display: fallback;
 	}
 
-	:global(*) {
+	:global(*, ::before, ::after) {
 		box-sizing: border-box;
 		margin: 0;
 	}
