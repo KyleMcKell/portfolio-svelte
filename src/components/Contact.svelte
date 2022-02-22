@@ -33,31 +33,24 @@
 
 		const emailJSUser = import.meta.env.VITE_EMAILJS_USER_ID;
 
-		if (!emailJSUser) {
+		if (!emailJSUser || emailJSUser !== typeof 'string') {
 			return toast.push('Missing emailJS user ID', { theme: errorToastTheme });
 		}
 
-		emailjs
-			.sendForm(
-				'gmail',
-				'contact-me',
-				typedTarget,
-				import.meta.env.VITE_EMAILJS_USER_ID as string
-			)
-			.then(
-				(result) => {
-					toast.push('Email Sent!', {
-						theme: successToastTheme,
-					});
-					console.log(result);
-				},
-				(error) => {
-					toast.push('Email not sent!', {
-						theme: errorToastTheme,
-					});
-					console.error(error);
-				}
-			);
+		emailjs.sendForm('gmail', 'contact-me', typedTarget, emailJSUser).then(
+			(result) => {
+				toast.push('Email Sent!', {
+					theme: successToastTheme,
+				});
+				console.log(result);
+			},
+			(error) => {
+				toast.push('Email not sent!', {
+					theme: errorToastTheme,
+				});
+				console.error(error);
+			}
+		);
 
 		typedTarget.reset();
 	}
