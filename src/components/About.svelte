@@ -66,7 +66,7 @@
 		aspect-ratio: 1/1;
 		border-radius: 50%;
 		border: 5px solid var(--gray-500);
-		transition: all 0.3s ease-in-out;
+		transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
 	}
 
 	img:hover {

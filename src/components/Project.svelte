@@ -38,7 +38,7 @@
 		object-fit: cover;
 		border-radius: 8px;
 		aspect-ratio: 1/1;
-		transition: all 0.3s ease-in-out;
+		transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
 		max-width: 325px;
 		max-height: 325px;
 		min-height: 200px;
