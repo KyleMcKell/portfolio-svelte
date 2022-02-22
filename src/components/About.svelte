@@ -28,7 +28,7 @@
 	</article>
 
 	<a tabindex="-1" href="https://twitter.com/KyleMcKell"
-		><img src={'/img/me.jpg'} alt="Kyle McKell holding a plant" /></a
+		><img src={'/img/me.avif'} alt="Kyle McKell holding a plant" /></a
 	>
 </section>
 
