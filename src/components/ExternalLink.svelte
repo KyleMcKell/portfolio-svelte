@@ -3,9 +3,7 @@
 	export let target: string = '_self';
 
 	$: ariaDescribedBy =
-		target === '_self'
-			? 'new-window-external-self'
-			: 'new-window-external-blank';
+		target === '_self' ? 'link-external-self' : 'link-external-blank';
 </script>
 
 <a {href} {target} aria-describedby={ariaDescribedBy}>
