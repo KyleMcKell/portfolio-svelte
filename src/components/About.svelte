@@ -2,38 +2,42 @@
 	<article>
 		<p>
 			I&apos;m a self-taught front-end developer
-			<span> ADHD-</span>ing my way through the world of web development
+			<span class="snazzy"> ADHD-</span>ing my way through the world of web
+			development
 		</p>
 		<p>
 			I have a passion for teaching others, and if you're interested, you can
 			follow along on my
-			<a href="https://twitter.com/KyleMcKell"> Twitter</a>
+			<a href="https://twitter.com/KyleMcKell" aria-describedby="new-window-1">
+				Twitter
+			</a>
 		</p>
 		<p>
 			While you're at it, you can check out my
-			<a href="https://github.com/KyleMcKell"> GitHub</a>
+			<a href="https://github.com/KyleMcKell" aria-describedby="new-window-1">
+				GitHub
+			</a>
 		</p>
 		<p>
 			My current tech stack includes
-			<a href="https://reactjs.org/"> React</a>,
-			<a href="https://www.typescriptlang.org/"> TypeScript</a>, and a UI
-			framework. Currently my favorites are
-			<a href="https://nextjs.org/"> Next.js</a>,
-			<a href="https://remix.run/"> Remix</a>, and
-			<a href="https://kit.svelte.dev/"> SvelteKit</a>
+			<span class="tech" href="https://reactjs.org/"> React</span>,
+			<span class="tech" href="https://www.typescriptlang.org/">
+				TypeScript</span
+			>, and a UI framework. Currently my favorites are
+			<span class="tech" href="https://nextjs.org/"> Next.js</span>,
+			<span class="tech" href="https://remix.run/"> Remix</span>, and
+			<span class="tech" href="https://kit.svelte.dev/"> SvelteKit</span>
 		</p>
 		<p>
-			I also LOVE writing <span class="pink"> NIFTY </span>CSS!
+			I also LOVE writing <span class="snazzy pink"> NIFTY </span>CSS!
 		</p>
 		<p>☕ Let's chat sometime 💙</p>
 	</article>
 
-	<a tabindex="-1" href="https://twitter.com/KyleMcKell">
-		<picture>
-			<source type="image/avif" srcset="/img/me.avif" />
-			<img src="/img/me.png" alt="Kyle McKell holding a plant" />
-		</picture>
-	</a>
+	<picture>
+		<source type="image/avif" srcset="/img/me.avif" />
+		<img src="/img/me.png" alt="Kyle McKell holding a plant" />
+	</picture>
 </section>
 
 <style>
@@ -73,26 +77,41 @@
 		border-color: var(--primary-700);
 		transform: rotate(5deg);
 		will-change: transform, border-color;
-		cursor: pointer;
 	}
 
 	a {
 		color: var(--primary-300);
-		text-decoration: none;
 		transition: color 0.25s linear;
+	}
+
+	a::after {
+		background-color: currentColor;
+		display: inline-block;
+		content: '';
+		height: 16px;
+		width: 16px;
+		margin-left: 3px;
+		mask: url(/img/external-link.svg);
+		mask-size: cover;
+		-webkit-mask: url(/img/external-link.svg);
+		-webkit-mask-size: cover;
 	}
 
 	a:hover {
 		cursor: pointer;
+		text-decoration: none;
 		color: var(--primary-500);
-		text-decoration: underline;
 	}
 
-	span {
+	.tech {
+		color: var(--primary-300);
+	}
+
+	.snazzy {
 		font-family: var(--font-snazzy);
 	}
 
-	span.pink {
+	.snazzy.pink {
 		color: var(--secondary-300);
 	}
 

@@ -20,6 +20,11 @@ Welcome to my site! Enjoy your stay 🐦🦆🦉🐧🦜
 	<title>Kyle McKell</title>
 </svelte:head>
 
+<div class="visuallyhidden" hidden>
+	<span id="new-window-0">Opens in a new window</span>
+	<span id="new-window-1">Opens an external site</span>
+	<span id="new-window-2">Opens an external site in a new window</span>
+</div>
 <SvelteToast />
 <Header />
 <Main />
@@ -81,6 +86,18 @@ Welcome to my site! Enjoy your stay 🐦🦆🦉🐧🦜
 
 	:global(p, h1, h2, h3, h4, h5, h6) {
 		overflow-wrap: break-word;
+	}
+
+	:global(.visuallyhidden) {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		white-space: nowrap;
 	}
 
 	:global(:root) {
