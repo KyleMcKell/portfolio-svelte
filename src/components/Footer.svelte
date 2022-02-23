@@ -15,6 +15,10 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 4rem;
+		gap: 2rem;
+	}
+
+	p {
+		margin-top: 2rem;
 	}
 </style>

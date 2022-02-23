@@ -57,8 +57,8 @@
 	}
 </script>
 
+<h2>Contact Me!</h2>
 <form action="submit" on:submit={sendEmail}>
-	<h2>Contact Me!</h2>
 	<section class="field name">
 		<label for="name">Name</label>
 		<input
@@ -117,7 +117,6 @@
 		gap: 2rem;
 		grid-template-columns: 1fr minmax(250px, auto) 1fr;
 		grid-template-areas:
-			'heading heading heading'
 			'name message message'
 			'email message message'
 			'subject subject button';
@@ -127,7 +126,7 @@
 		color: var(--text-base);
 		font-size: 2rem;
 		grid-area: heading;
-		text-align: center;
+		justify-self: center;
 	}
 
 	section.field {
@@ -238,7 +237,6 @@
 		form {
 			grid-template-columns: 1fr;
 			grid-template-areas:
-				'heading'
 				'name'
 				'email'
 				'subject'
