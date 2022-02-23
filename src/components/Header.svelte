@@ -1,6 +1,5 @@
 <header>
 	<h1 class="name">Kyle McKell</h1>
-	<!-- <h2>Hello! I'm</h2> -->
 </header>
 
 <style>
