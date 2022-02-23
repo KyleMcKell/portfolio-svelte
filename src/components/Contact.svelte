@@ -61,22 +61,49 @@
 	<h2>Contact Me!</h2>
 	<section class="field name">
 		<label for="name">Name</label>
-		<input type="text" name="name" id="name" required {disabled} />
+		<input
+			type="text"
+			name="name"
+			id="name"
+			placeholder="Kyle McKell"
+			required
+			{disabled}
+		/>
 	</section>
 
 	<section class="field email">
 		<label for="email">Email</label>
-		<input type="email" name="email" id="email" required {disabled} />
+		<input
+			type="email"
+			name="email"
+			id="email"
+			placeholder="hello@example.com"
+			required
+			{disabled}
+		/>
 	</section>
 
 	<section class="field subject">
 		<label for="subject">Subject</label>
-		<input name="subject" type="text" id="subject" required {disabled} />
+		<input
+			name="subject"
+			type="text"
+			id="subject"
+			placeholder="Have a great day"
+			required
+			{disabled}
+		/>
 	</section>
 
 	<section class="area message">
 		<label for="message">Message</label>
-		<textarea name="message" id="message" required {disabled} />
+		<textarea
+			name="message"
+			id="message"
+			placeholder="You look nice today!"
+			required
+			{disabled}
+		/>
 	</section>
 
 	<button type="submit" {disabled}>Send</button>
@@ -157,6 +184,11 @@
 
 	textarea:focus {
 		outline: 3px solid var(--primary-600);
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		color: var(--gray-500);
 	}
 
 	textarea:disabled,
