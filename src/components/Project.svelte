@@ -6,7 +6,7 @@
 </script>
 
 <li>
-	<a href={url}>
+	<a href={url} aria-labelledby="new-window-external-self">
 		<picture>
 			<source srcset={`/img/${src}.avif`} type="image/avif" />
 			<img src={`/img/${src}.png`} alt={description} />

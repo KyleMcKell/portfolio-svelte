@@ -1,8 +1,9 @@
 <script>
+	import { SvelteToast } from '@zerodevx/svelte-toast';
+	import Aria from '../components/Aria.svelte';
 	import Header from '../components/Header.svelte';
 	import Main from '../components/Main.svelte';
 	import Footer from '../components/Footer.svelte';
-	import { SvelteToast } from '@zerodevx/svelte-toast';
 
 	console.log(`(o<  (o<  (o<
 <_)  <_)  <_) 
@@ -20,14 +21,8 @@ Welcome to my site! Enjoy your stay 🐦🦆🦉🐧🦜
 	<title>Kyle McKell</title>
 </svelte:head>
 
-<div class="visuallyhidden" hidden>
-	<span id="new-window-blank">Opens in a new window</span>
-	<span id="new-window-external-self">Opens an external site</span>
-	<span id="new-window-external-blank"
-		>Opens an external site in a new window</span
-	>
-</div>
 <SvelteToast />
+<Aria />
 <Header />
 <Main />
 <Footer />
