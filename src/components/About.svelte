@@ -1,3 +1,7 @@
+<script>
+	import ExternalLink from './ExternalLink.svelte';
+</script>
+
 <section>
 	<article>
 		<p>
@@ -8,15 +12,11 @@
 		<p>
 			I have a passion for teaching others, and if you're interested, you can
 			follow along on my
-			<a href="https://twitter.com/KyleMcKell" aria-describedby="new-window-1">
-				Twitter
-			</a>
+			<ExternalLink href="https://twitter.com/KyleMcKell">Twitter</ExternalLink>
 		</p>
 		<p>
 			While you're at it, you can check out my
-			<a href="https://github.com/KyleMcKell" aria-describedby="new-window-1">
-				GitHub
-			</a>
+			<ExternalLink href="https://github.com/KyleMcKell">GitHub</ExternalLink>
 		</p>
 		<p>
 			My current tech stack includes
@@ -77,30 +77,6 @@
 		border-color: var(--primary-700);
 		transform: rotate(5deg);
 		will-change: transform, border-color;
-	}
-
-	a {
-		color: var(--primary-300);
-		transition: color 0.25s linear;
-	}
-
-	a::after {
-		background-color: currentColor;
-		display: inline-block;
-		content: '';
-		height: 16px;
-		width: 16px;
-		margin-left: 3px;
-		mask: url(/img/external-link.svg);
-		mask-size: cover;
-		-webkit-mask: url(/img/external-link.svg);
-		-webkit-mask-size: cover;
-	}
-
-	a:hover {
-		cursor: pointer;
-		text-decoration: none;
-		color: var(--primary-500);
 	}
 
 	.tech {
