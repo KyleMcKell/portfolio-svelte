@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { CoffeeIcon, ExternalLinkIcon } from 'svelte-feather-icons';
-	import About from './About.svelte';
 
 	type IconIDs = 'coffee' | 'externalLink';
 
