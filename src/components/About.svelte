@@ -79,6 +79,7 @@
 	a {
 		color: var(--primary-300);
 		text-decoration: none;
+		transition: color 0.25s linear;
 	}
 
 	a:hover {
