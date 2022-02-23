@@ -5,8 +5,8 @@
 
 	export let id: IconIDs;
 	export let color: string = 'currentColor';
-	export let size: string | number = 24;
-	export let strokeWidth: string | number = 2;
+	export let size: string = '24';
+	export let strokeWidth: string = '2';
 	export let fill: string = 'none';
 
 	const icons: { [key in IconIDs]: any } = {
