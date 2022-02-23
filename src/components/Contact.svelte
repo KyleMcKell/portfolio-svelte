@@ -32,7 +32,9 @@
 		const emailJSUser = import.meta.env.VITE_EMAILJS_USER_ID;
 
 		if (typeof emailJSUser !== 'string') {
-			return toast.push('Missing emailJS user ID', { theme: errorToastTheme });
+			return toast.push('Missing email credentials', {
+				theme: errorToastTheme,
+			});
 		}
 
 		emailjs.sendForm('gmail', 'contact-me', typedTarget, emailJSUser).then(
