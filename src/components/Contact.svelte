@@ -235,6 +235,7 @@
 
 	@media (max-width: 1000px) {
 		form {
+			min-width: 80%;
 			grid-template-columns: 1fr;
 			grid-template-areas:
 				'name'
