@@ -41,10 +41,12 @@
 
 <style>
 	section {
+		width: 100%;
 		padding: 4rem 3rem;
 		display: flex;
 		flex-direction: column;
 		gap: 2.5rem;
+		align-items: center;
 	}
 
 	h2 {
@@ -55,8 +57,8 @@
 
 	ul {
 		padding: 0;
-		width: fit-content;
 		height: 100%;
+		width: clamp(80%, 1000px, 90%);
 		display: flex;
 		flex-direction: row;
 		align-items: center;
