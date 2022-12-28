@@ -11,7 +11,7 @@
 	const projects: Project[] = [
 		{
 			name: 'Aeropress Tracker',
-			url: 'https://aeropresstracker.com/',
+			url: 'https://aeropress-tracker-53ey9otoe-kylemckell.vercel.app/',
 			description: 'An app to track aeropress brews to make the perfect one!',
 			src: 'aeropresstracker',
 		},
