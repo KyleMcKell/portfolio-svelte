@@ -5,8 +5,8 @@
 <section>
 	<article>
 		<p>
-			I&apos;m a self-taught front-end developer
-			<span class="snazzy"> ADHD-</span>ing my way through the world of web
+			I&apos;m a self-taught full-stack developer
+			<span class="snazzy pink"> cruising</span> my way through the world of web
 			development
 		</p>
 		<p>
